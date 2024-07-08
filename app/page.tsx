@@ -2,11 +2,14 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex justify-center items-center p-8 bg-slate-300 rounded-lg hover:bg-black hover:text-white delay-100">
-
-     <h1 className="text-5xl font-semibold self-center ">LingoSync</h1>
-      </div>
-    </main>
+    <div>
+      <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+      
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+      <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+        Lingo Sync
+      </p>
+    </div>
+    </div>
   );
 }
